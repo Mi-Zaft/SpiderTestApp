@@ -15,7 +15,7 @@ protocol ItemViewModelProtocol {
     
     func item(at index: Int) -> Item
     func toggleItemSelection(at index: Int)
-    func selectAllTapped()
+    func selectAllTapped(to: Bool)
     func submit()
 }
 
@@ -51,10 +51,10 @@ class ItemViewModel: ItemViewModelProtocol {
         updateSubmitButtonState()
     }
     
-    func selectAllTapped() {
+    func selectAllTapped(to isSelected: Bool) {
         for index in 0..<items.count {
             if items[index].isTappedOnSelectAll {
-                items[index].isSelected = true
+                items[index].isSelected = isSelected
             }
         }
         onItemUpdate?()

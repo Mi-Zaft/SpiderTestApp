@@ -40,7 +40,7 @@ class ItemListViewController: UIViewController {
         view.addSubview(tableView)
         
         selectAllCheckboxButton.configure(text: "Выбрать всё", state: false) { [weak self] in
-            self?.viewModel.selectAllTapped()
+            self?.viewModel.selectAllTapped(to: true)
         }
         
         selectAllCheckboxButton.translatesAutoresizingMaskIntoConstraints = false
@@ -82,7 +82,7 @@ private extension ItemListViewController {
         
         viewModel.onSelectAllButtonStateUpdate = { [weak self] isSelected in
             self?.selectAllCheckboxButton.configure(text: "Выбрать всё", state: isSelected) { [weak self] in
-                self?.viewModel.selectAllTapped()
+                self?.viewModel.selectAllTapped(to: !isSelected)
             }
         }
         
