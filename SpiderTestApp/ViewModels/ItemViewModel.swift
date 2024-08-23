@@ -31,8 +31,8 @@ class ItemViewModel: ItemViewModelProtocol {
     var onSubmitButtonStateUpdate: ((Bool) -> Void)?
     
     private var items: [Item] = [
-        Item(title: "Красный", isRequired: true, isTappedOnSelectAll: false, isSelected: false),
-        Item(title: "Зеленый", isRequired: false, isTappedOnSelectAll: true, isSelected: false),
+        Item(title: "Красный", isRequired: true, isTappedOnSelectAll: true, isSelected: false),
+        Item(title: "Зеленый", isRequired: false, isTappedOnSelectAll: false, isSelected: false),
         Item(title: "Синий", isRequired: false, isTappedOnSelectAll: false, isSelected: false),
         Item(title: "Желтый", isRequired: true, isTappedOnSelectAll: true, isSelected: false),
         Item(title: "Фиолетовый", isRequired: true, isTappedOnSelectAll: true, isSelected: false),
@@ -68,7 +68,7 @@ class ItemViewModel: ItemViewModelProtocol {
     }
     
     private func updateSelectAllCheckbox() {
-        let isAllRequiredSelected = items.filter {$0.isTappedOnSelectAll}.allSatisfy { $0.isSelected }
+        let isAllRequiredSelected = items.filter {$0.isRequired}.allSatisfy { $0.isSelected }
         onSelectAllButtonStateUpdate?(isAllRequiredSelected)
     }
     
