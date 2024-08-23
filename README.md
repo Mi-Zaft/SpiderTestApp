@@ -3,6 +3,7 @@
 This repository contains a mobile iOS application developed as part of a test assignment. The application is designed following the MVVM (Model-View-ViewModel) architectural pattern and utilizes AutoLayout for UI layout and constraints.
 
 ![Screen with required fields](https://i.imgur.com/eCDWXKz.png)
+![Screen with select all fields](https://i.imgur.com/Kdy9E8d.png)
 
 ## Features
 
