@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		94ABBF702C74EDBF0052473C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABBF6F2C74EDBF0052473C /* AppDelegate.swift */; };
 		94ABBF722C74EDBF0052473C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABBF712C74EDBF0052473C /* SceneDelegate.swift */; };
-		94ABBF742C74EDBF0052473C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABBF732C74EDBF0052473C /* ViewController.swift */; };
-		94ABBF772C74EDBF0052473C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ABBF752C74EDBF0052473C /* Main.storyboard */; };
+		94ABBF742C74EDBF0052473C /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABBF732C74EDBF0052473C /* ItemListViewController.swift */; };
 		94ABBF792C74EDC00052473C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94ABBF782C74EDC00052473C /* Assets.xcassets */; };
 		94ABBF7C2C74EDC00052473C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ABBF7A2C74EDC00052473C /* LaunchScreen.storyboard */; };
+		94ABBF872C74FD920052473C /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABBF862C74FD920052473C /* ItemModel.swift */; };
+		94ABBF8B2C74FF210052473C /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABBF8A2C74FF210052473C /* ItemViewModel.swift */; };
+		94ABBF8D2C750C090052473C /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABBF8C2C750C090052473C /* ItemTableViewCell.swift */; };
+		94B12BED2C76275B006EF632 /* ItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B12BEC2C76275B006EF632 /* ItemCellView.swift */; };
+		94B12BEF2C7627AF006EF632 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B12BEE2C7627AF006EF632 /* CheckboxView.swift */; };
+		94B12BF22C7629B1006EF632 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B12BF12C7629B1006EF632 /* ColorConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		94ABBF6C2C74EDBF0052473C /* SpiderTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpiderTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94ABBF6F2C74EDBF0052473C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94ABBF712C74EDBF0052473C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		94ABBF732C74EDBF0052473C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		94ABBF762C74EDBF0052473C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94ABBF732C74EDBF0052473C /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		94ABBF782C74EDC00052473C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94ABBF7B2C74EDC00052473C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94ABBF7D2C74EDC00052473C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94ABBF862C74FD920052473C /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		94ABBF8A2C74FF210052473C /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		94ABBF8C2C750C090052473C /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		94B12BEC2C76275B006EF632 /* ItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellView.swift; sourceTree = "<group>"; };
+		94B12BEE2C7627AF006EF632 /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
+		94B12BF12C7629B1006EF632 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,76 @@
 		94ABBF6E2C74EDBF0052473C /* SpiderTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				94ABBF6F2C74EDBF0052473C /* AppDelegate.swift */,
-				94ABBF712C74EDBF0052473C /* SceneDelegate.swift */,
-				94ABBF732C74EDBF0052473C /* ViewController.swift */,
-				94ABBF752C74EDBF0052473C /* Main.storyboard */,
+				94ABBF852C74FD510052473C /* ViewControllers */,
+				94ABBF842C74FD4C0052473C /* ViewModels */,
+				94ABBF832C74FD450052473C /* Models */,
+				94ABBF882C74FE0B0052473C /* App */,
+				94ABBF892C74FE390052473C /* Storyboards */,
+				94B12BEB2C762725006EF632 /* Views */,
+				94B12BF02C76299F006EF632 /* Helpers */,
 				94ABBF782C74EDC00052473C /* Assets.xcassets */,
-				94ABBF7A2C74EDC00052473C /* LaunchScreen.storyboard */,
-				94ABBF7D2C74EDC00052473C /* Info.plist */,
 			);
 			path = SpiderTestApp;
+			sourceTree = "<group>";
+		};
+		94ABBF832C74FD450052473C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94ABBF862C74FD920052473C /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		94ABBF842C74FD4C0052473C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				94ABBF8A2C74FF210052473C /* ItemViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		94ABBF852C74FD510052473C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				94ABBF732C74EDBF0052473C /* ItemListViewController.swift */,
+				94ABBF8C2C750C090052473C /* ItemTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		94ABBF882C74FE0B0052473C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				94ABBF6F2C74EDBF0052473C /* AppDelegate.swift */,
+				94ABBF712C74EDBF0052473C /* SceneDelegate.swift */,
+				94ABBF7D2C74EDC00052473C /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		94ABBF892C74FE390052473C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				94ABBF7A2C74EDC00052473C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		94B12BEB2C762725006EF632 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94B12BEC2C76275B006EF632 /* ItemCellView.swift */,
+				94B12BEE2C7627AF006EF632 /* CheckboxView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		94B12BF02C76299F006EF632 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				94B12BF12C7629B1006EF632 /* ColorConstants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +198,6 @@
 			files = (
 				94ABBF7C2C74EDC00052473C /* LaunchScreen.storyboard in Resources */,
 				94ABBF792C74EDC00052473C /* Assets.xcassets in Resources */,
-				94ABBF772C74EDBF0052473C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +208,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94ABBF742C74EDBF0052473C /* ViewController.swift in Sources */,
+				94B12BEF2C7627AF006EF632 /* CheckboxView.swift in Sources */,
+				94ABBF742C74EDBF0052473C /* ItemListViewController.swift in Sources */,
 				94ABBF702C74EDBF0052473C /* AppDelegate.swift in Sources */,
+				94ABBF872C74FD920052473C /* ItemModel.swift in Sources */,
+				94ABBF8B2C74FF210052473C /* ItemViewModel.swift in Sources */,
+				94B12BED2C76275B006EF632 /* ItemCellView.swift in Sources */,
+				94B12BF22C7629B1006EF632 /* ColorConstants.swift in Sources */,
+				94ABBF8D2C750C090052473C /* ItemTableViewCell.swift in Sources */,
 				94ABBF722C74EDBF0052473C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +223,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		94ABBF752C74EDBF0052473C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				94ABBF762C74EDBF0052473C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		94ABBF7A2C74EDC00052473C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,12 +362,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 53644Z7QPP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpiderTestApp/Info.plist;
+				INFOPLIST_FILE = SpiderTestApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +375,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.spider-test-app.SpiderTestApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,12 +394,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 53644Z7QPP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpiderTestApp/Info.plist;
+				INFOPLIST_FILE = SpiderTestApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +407,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.spider-test-app.SpiderTestApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
